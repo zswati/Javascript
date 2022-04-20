@@ -1,0 +1,15 @@
+function sortedSquated(array) {
+    const newArray = new Array(array.length).fill(0);
+    for (i = 0; i < array.length; i++) {
+        newArray[i] = Math.pow(array[i], 2);
+    }
+    newArray.sort(function (a, b) { return a - b });
+    return newArray;
+}
+
+a = [3, 1, 9, 4];
+b = [-8, 4, -7, 5];
+c = [];
+console.log(sortedSquated(a))
+console.log(sortedSquated(b))
+console.log(sortedSquated(c))
